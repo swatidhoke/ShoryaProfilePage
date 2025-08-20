@@ -4,173 +4,265 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile of Shorya Salunkhe</title>
+    <title>Shorya Salunkhe - Young Explorer & Adventurer</title>
+    <!-- Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <style>
+        /* Reset some default styles */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
             margin: 0;
             padding: 20px;
             line-height: 1.6;
-            color: #333;
         }
 
+        /* Container for overall content */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header styles */
         header {
             text-align: center;
-            padding-bottom: 20px;
+            padding: 30px 20px;
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin: 0;
-            color: #008b8b;
+            color: #006666;
         }
 
+        header p {
+            font-size: 1.2em;
+            margin-top: 8px;
+            color: #555;
+        }
+
+        /* Profile Image Styling */
+        .profile-image {
+            width: 350px;
+            max-width: 90%;
+            height: 200px;
+            margin: 30px auto;
+            background-image: url('main.jpeg');
+            /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border: 2px solid #006666;
+        }
+
+        /* Section styles for clarity and spacing */
         section {
-            margin-bottom: 40px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #ffffff;
-            padding: 20px;
+            background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
         }
 
         section h2 {
+            font-size: 2em;
             color: #006666;
+            margin-bottom: 15px;
             border-bottom: 2px solid #006666;
-            padding-bottom: 10px;
+            padding-bottom: 8px;
         }
 
-       .images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px; /* Slightly increase gap for better spacing */
-    margin-top: 15px; /* Increase margin for spacing */
-}
+        /* Subheading styles */
+        h3 {
+            margin-top: 25px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #444;
+        }
 
-    .images img {
-        width: 100%; /* Make images take full width of their container */
-        max-width: 300px; /* Increase max width for larger images */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 8px;
-        object-fit: cover;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
+        /* Paragraph styles */
+        p {
+            margin-top: 10px;
+            font-size: 1em;
+        }
 
-         
+        /* Images grid styling */
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
 
+        .images img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Hover effect on images */
+        .images img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Favorite section styling */
         .favorite {
             background-color: #e0ffff;
-            padding: 10px;
+            padding: 20px;
             border-radius: 8px;
+            margin-top: 20px;
         }
 
+        .favorite ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .favorite li {
+            margin-bottom: 10px;
+        }
+
+        /* Callout / quote style */
+        .callout {
+            font-style: italic;
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 30px;
+            color: #555;
+        }
+
+        /* Footer styling */
         footer {
             text-align: center;
             padding: 20px;
-            font-style: italic;
-            color: #555;
+            border-top: 1px solid #ddd;
+            color: #777;
+            font-size: 0.95em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .profile-image {
+                height: 150px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            section {
+                padding: 20px 15px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Profile of Shorya Salunkhe</h1>
-        <p>Age: 8 Years Old</p>
-    </header>
+    <div class="container">
 
-    <section>
-        <h2>About Shorya</h2>
-        <p>Meet Shorya, a brave and adventurous young hero who loves exploring, sports, and gaming! With a curious mind
-            and a daring spirit, Shorya is always ready for new adventures.</p>
-    </section>
+        <header>
+            <h1>Shorya Salunkhe</h1>
+            <p>Young Explorer & Adventurer | Age: 8 | California, USA</p>
+        </header>
 
-    <section>
-        <h2>Adventures & Achievements</h2>
+        <!-- Profile Image -->
+        <div class="profile-image"></div>
 
-        <h3>🏞️ Mission Peak Hike</h3>
-        <p>At just 7 years old, Shorya conquered the challenging Mission Peak trail, which is approximately 3.8 miles
-            (6.1 km)
-            long with a steep ascent and rugged terrain. The trail is known for its breathtaking views and is considered
-            a
-            difficult hike even for experienced hikers. Shorya showed incredible courage, determination, and stamina to
-            complete
-            this adventure at such a young age!</p>
-        <div class="images">
-            <img src="MissionPeakHike.png" alt="Mission Peak Hike" />
-        </div>
+        <!-- About Section -->
+        <section>
+            <h2>About Shorya</h2>
+            <p>Meet Shorya, a brave and curious young hero who loves exploring, sports, and gaming! With a daring spirit
+                and a love for adventure, he’s always ready for his next big journey.</p>
+        </section>
 
-        <h3>🏃 Rock and Roll Run - Oct 2024</h3>
-        <p>Fast and energetic, Shorya participated in the exciting Rock and Roll Run in 2024, running with a big smile!
-        </p>
-        <div class="images">
-            <img src="Rock&Roll.png" alt="Rock and Roll Run" />
-        </div>
+        <!-- Adventures & Achievements -->
+        <section>
+            <h2>Adventures & Achievements</h2>
 
-        <h3>🚣 Rafting Adventure</h3>
-        <p>Middle Fork of the American River – August 2025
-            Shorya had an unforgettable day of adventure, riding the rapids with pure excitement. 🌊🚣‍♂️ He bravely
-            faced the
-            rolling waves and swirling currents, laughing through every splash. The crisp mountain air, rushing waters,
-            and scenic
-            canyon backdrop made the rafting trip even more magical. It was a day of courage, fun, and memories that
-            will last a
-            lifetime!</p>
-        <div class="images">
-            <img src="Rafting.jpeg" alt="Rafting" />
-        </div>
+            <h3>🏞️ Mission Peak Hike</h3>
+            <p>At just 7 years old, Shorya conquered the challenging Mission Peak trail, known for its breathtaking
+                views and rugged terrain. His courage and stamina made him a true young explorer!</p>
+            <div class="images">
+                <img src="MissionPeakHike.png" alt="Mission Peak Hike" />
+            </div>
 
-        <h3>🎥 YouTuber & Biking</h3>
-        <p>Shorya loves creating videos for his YouTube channel and enjoys biking around the neighborhood!</p>
-        <div class="images">
-            <img src="Gaming.png" alt="YouTuber Biking" />
-        </div>
+            <h3>🏃 Rock and Roll Run - Oct 2024</h3>
+            <p>Shorya participated in the 2024 Rock and Roll Run, running with energy and enthusiasm!</p>
+            <div class="images">
+                <img src="Rock&Roll.png" alt="Rock and Roll Run" />
+            </div>
 
-        <h3>🌊 Swimming </h3>
-        <p>He’s a confident swimmer!</p>
-        <div class="images">
-            <img src="swim.jpeg" alt="Swimming" />
+            <h3>🚣 Rafting Adventure</h3>
+            <p>In August 2025, he braved the rapids of the Middle Fork of the American River, creating memories of
+                courage and joy.</p>
+            <div class="images">
+                <img src="Rafting.jpeg" alt="Rafting" />
+            </div>
 
-        </div>
+            <h3>🎥 YouTuber & Biking</h3>
+            <p>Shorya loves making videos for his YouTube channel and enjoys biking around his neighborhood.</p>
+            <div class="images">
+                <img src="Gaming.png" alt="YouTuber Biking" />
+            </div>
 
-        <h3>Hoverboarding &🛹 Skateboarding</h3>
-        <p>Hoverboarding & Skateboarding is one of his favorite hobbies, where he’s become quite skilled!</p>
-        <div class="images">
-            <img src="hover.jpeg" alt="Hover Board" />
-            <img src="Skate.jpeg" alt="Skateboarding" />
-        </div>
+            <h3>🌊 Swimming</h3>
+            <p>Confident in the water, Shorya loves swimming and splashing around!</p>
+            <div class="images">
+                <img src="swim.jpeg" alt="Swimming" />
+            </div>
 
-        <h3>🎮 Gaming & Roblox</h3>
-        <p>Shorya is a gaming champ, especially in Roblox and Nintendo games!</p>
-        <div class="images">
-            <img src="" alt="Gaming" />
-        </div>
-    </section>
+            <h3>Hoverboarding &🛹 Skateboarding</h3>
+            <p>He’s become skilled at hoverboarding and skateboarding, having fun and practicing every chance he gets!
+            </p>
+            <div class="images">
+                <img src="hover.jpeg" alt="Hover Board" />
+                <img src="Skate.jpeg" alt="Skateboarding" />
+            </div>
 
-    <section>
-        <h2>Shorya's Favorite Things</h2>
-        <div class="favorite">
-            <ul>
-                <li>Exploring nature and outdoor adventures</li>
-                <li>Creating fun videos for YouTube</li>
-                <li>Playing video games and building in Roblox</li>
-                <li>Biking, swimming, skateboarding, and hoverboarding</li>
-            </ul>
-        </div>
-    </section>
+            <h3>🎮 Gaming & Roblox</h3>
+            <p>Shorya is a gaming champion, especially in Roblox and Nintendo games!</p>
+        </section>
 
-    <section>
-        <h2>A Message from Shorya</h2>
-        <p style="text-align:center;">"Always stay brave, curious, and ready for new adventures!"</p>
-    </section>
+        <!-- Favorite Things -->
+        <section>
+            <h2>Shorya's Favorite Things</h2>
+            <div class="favorite">
+                <ul>
+                    <li>Exploring nature and outdoor adventures</li>
+                    <li>Creating fun videos for YouTube</li>
+                    <li>Playing video games and building in Roblox</li>
+                    <li>Biking, swimming, running, and hoverboarding</li>
+                </ul>
+            </div>
+        </section>
 
-    <footer>
-        <p>Made with love for Shorya!</p>
-    </footer>
+        <!-- Message from Shorya -->
+        <section>
+            <h2>A Message from Shorya</h2>
+            <div class="callout">"Always stay brave, curious, and ready for new adventures!"</div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with love for Shorya!</p>
+        </footer>
+
+    </div>
 
 </body>
 
