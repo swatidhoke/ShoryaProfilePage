@@ -48,20 +48,19 @@
             color: #555;
         }
 
-        /* Profile Image Styling */
-        .profile-image {
-            width: 350px;
-            max-width: 90%;
-            height: 200px;
-            margin: 30px auto;
-            background-image: url('main.jpeg');
-            /* Replace with your image path */
-            background-size: cover;
-            background-position: center;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            border: 2px solid #006666;
-        }
+       .profile-image {
+  width: 350px;
+  max-width: 90%;
+  height: 200px;
+  margin: 30px auto;
+  background-image: url('main.jpeg'); /* Your image path */
+  background-size: contain; /* Ensures the entire image is visible without cropping */
+  background-repeat: no-repeat; /* Prevents repeating if image is smaller than container */
+  background-position: center; /* Centers the image */
+  border-radius: 8px; /* Keeps corners slightly rounded, remove if square is preferred */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border: 2px solid #006666;
+}
 
         /* Section styles for clarity and spacing */
         section {
