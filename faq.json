@@ -1,0 +1,100 @@
+{
+  "basic_info": {
+    "name": "Shorya",
+    "age": "8 years",
+    "location": "Cupertino, CA",
+    "gender": "Male",
+    "about": "An energetic 8-year-old boy with a natural smile, expressive eyes, and a confident camera presence."
+  },
+
+  "physical_details": {
+    "height": "4 ft 3 in",
+    "weight": "60 lbs",
+    "hair_color": "Black",
+    "eye_color": "Brown",
+    "skin_tone": "Medium / Warm",
+    "clothing_size": "Kids Medium (8)",
+    "shoe_size": "Kids 2"
+  },
+
+  "portfolio": {
+    "portfolio_link": "https://swatidhoke.github.io/ShoryaProfilePage/",
+    "photo_types_available": [
+      "Headshots",
+      "Full-body shots",
+      "Profile side shots",
+      "Outdoor lifestyle photos",
+      "Studio shots"
+    ],
+    "last_updated": "2025-01-01"
+  },
+
+  "experience": {
+    "modeling_experience": "Beginner (Portfolio Ready)",
+    "strengths": [
+      "Poses naturally",
+      "Takes direction well",
+      "Comfortable in front of the camera",
+      "High energy and expressive",
+      "Good facial expressions"
+    ],
+    "skills": [
+      "Soccer",
+      "Swimming",
+      "Basic acting",
+      "Dance readiness",
+      "Confident walking and posture"
+    ]
+  },
+
+  "availability": {
+    "school_days": "Available after 4 PM",
+    "weekends": "Open",
+    "holidays": "Available with advance notice",
+    "location_limit": "Bay Area shoots preferred",
+    "travel": "Can travel with parent for paid bookings"
+  },
+
+  "projects_interested": [
+    "Kids fashion",
+    "Lifestyle shoots",
+    "Commercials",
+    "Catalog modeling",
+    "Runway for kids",
+    "Brand campaigns"
+  ],
+
+  "booking_info": {
+    "contact_name": "Swati",
+    "email": "swatisalukhe185@gmail.com",
+    "phone": "Your phone number (optional)",
+    "booking_process": [
+      "Share project details",
+      "Provide date, time, and location",
+      "Confirm compensation",
+      "Discuss wardrobe and preparation",
+      "Parent accompanies on shoot"
+    ]
+  },
+
+  "rates": {
+    "shoot_rate": "Discuss upon request",
+    "tfp_policy": "Open to selective TFP shoots if beneficial for portfolio"
+  },
+
+  "safety": {
+    "guardian_required": "Yes, a parent will be present at all times",
+    "permits": "No special permits required for child modeling in California",
+    "shoot_restrictions": [
+      "No late-night shoots",
+      "No unsafe environments",
+      "No uncomfortable wardrobe"
+    ]
+  },
+
+  "misc_questions": {
+    "personality": "Happy, social, disciplined, and cooperative on set.",
+    "best_features": "Eyes, smile, and natural posing ability.",
+    "confidence_level": "Very comfortable with photographers and new locations."
+  }
+}
