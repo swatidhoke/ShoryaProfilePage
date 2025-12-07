@@ -1,0 +1,30 @@
+# Render Infrastructure-as-Code manifest
+# Edit values below (repo, branch, region, names) as needed before applying in Render.
+
+services:
+  - type: web
+    name: shorya-backend
+    env: node
+    region: oregon
+    branch: main
+    repo: https://github.com/swatidhoke/ShoryaProfilePage
+    root: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
+    plan: starter
+
+staticSites:
+  - name: shorya-frontend
+    repo: https://github.com/swatidhoke/ShoryaProfilePage
+    branch: main
+    root: frontend
+    buildCommand: ""
+    publishPath: frontend
+    autoDeploy: true
+# Notes:
+# - Replace `YOUR_USERNAME` with your GitHub username or the correct repo URL.
+# - The `web` service points to the `backend` folder and runs `npm start` there.
+# - The `staticSites` entry serves the `frontend` folder directly as a static site; if you add a build step,
+#   set `buildCommand` and `publishPath` accordingly (e.g., when using a bundler/build output).
