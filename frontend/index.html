@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shorya Salunkhe • Young Explorer</title>
+
+    <p id="msg"></p>
+    <script src="script.js"></script>
+
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg1: "#00BFA6",
+                        bg2: "#87CEFA",
+                        accent: "#FFD76B",
+                        deep: "#006666",
+                        muted: "#6b7280"
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #00BFA6, #87CEFA, #FFD76B);
+            background-size: 300% 300%;
+            animation: bgMove 12s infinite alternate;
+        }
+
+        @keyframes bgMove {
+            0% {
+                background-position: left top;
+            }
+
+            100% {
+                background-position: right bottom;
+            }
+        }
+    </style>
+</head>
+
+<body class="hero-bg min-h-screen text-gray-800">
+
+    <!-- HERO / INTRO -->
+    <!-- Chatbot widget styles (small, self-contained) -->
+    <style>
+        /* increased widget size for better visibility */
+        #chatbot-widget { position: fixed; bottom: 90px; right: 20px; width: 380px; max-width: calc(100% - 40px); height: 520px; background: #ffffff; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.18); display: none; flex-direction: column; overflow: hidden; border: 2px solid #006666; z-index: 9999; }
+        #chat-header { background:#006666; color:white; padding:10px; text-align:center; font-weight:600; }
+        #chat-body { flex:1; padding:14px; overflow:auto; font-size:1rem; line-height:1.35; }
+        #chat-input-area { display:flex; border-top:1px solid #e5e7eb; }
+        #chat-input { flex:1; border:none; padding:10px; font-size:0.95rem; }
+        #send-btn { width:96px; border:none; background:#006666; color:white; cursor:pointer; padding:10px 12px; font-weight:600; }
+        /* larger, touch-friendly toggle */
+        #chat-toggle { position: fixed; bottom: 20px; right: 20px; background: #006666; color: white; padding: 16px; border-radius: 50%; cursor: pointer; box-shadow: 0 8px 18px rgba(0,0,0,0.18); border: none; z-index: 10001; touch-action: manipulation; font-size:20px; }
+        .bot-msg { background:#f3f4f6; padding:8px 10px; border-radius:8px; margin:6px 0; max-width:85%; }
+        .user-msg { background:#dcfce7; padding:8px 10px; border-radius:8px; margin:6px 0; align-self:flex-end; max-width:85%; }
+    </style>
+    <header class="text-center py-16 px-6">
+        <h1 class="text-5xl font-bold text-deep drop-shadow-sm">Shorya Salunkhe</h1>
+        <p class="text-lg mt-3 text-gray-700">Young Explorer • Adventurer • Creator</p>
+
+        <div class="w-56 h-56 mx-auto mt-8 rounded-full shadow-xl border-4 border-white bg-cover bg-center"
+            style="background-image: url('images/main.jpeg');"></div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-20 space-y-12">
+
+        <!-- ABOUT SECTION -->
+        <section class="backdrop-blur-xl bg-white/70 p-10 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold text-deep mb-4">About Shorya</h2>
+            <p class="text-gray-700 leading-relaxed text-lg">
+                Shorya is an energetic, curious, and fearless young adventurer. From outdoor challenges to
+                gaming creativity, he's always exploring something new and exciting.
+            </p>
+        </section>
+
+        <!-- ADVENTURES -->
+        <section class="backdrop-blur-xl bg-white/70 p-10 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold text-deep mb-6">Adventures & Achievements</h2>
+
+            <!-- Mission Peak -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold">🏞 Mission Peak Hike</h3>
+                <p class="text-gray-600 mt-1">At age 7, Shorya conquered the steep and scenic Mission Peak trail.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-4">
+                    <img src="images/MissionPeakHike.png" class="w-full h-56 object-cover rounded-xl shadow-md" />
+                </div>
+            </div>
+
+            <!-- Rock & Roll Run -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold">🏃 Rock & Roll Run 2024</h3>
+                <p class="text-gray-600 mt-1">He participated with unstoppable energy and excitement!</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-4">
+                    <img src="images/Rock&Roll.png" class="w-full h-56 object-cover rounded-xl shadow-md" />
+                </div>
+            </div>
+
+            <!-- Rafting -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold">🚣 Rafting Adventure</h3>
+                <p class="text-gray-600 mt-1">Fearless rafting on the American River!</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-4">
+                    <img src="images/Rafting.jpeg" class="w-full h-56 object-cover rounded-xl shadow-md" />
+                </div>
+            </div>
+
+            <!-- YouTube -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold">🎥 YouTube & Biking</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-4">
+                    <img src="images/Gaming.png" class="w-full h-56 object-cover rounded-xl shadow-md" />
+                </div>
+            </div>
+
+            <!-- Swimming -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold">🌊 Swimming</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-4">
+                    <img src="images/swim.jpeg" class="w-full h-56 object-cover rounded-xl shadow-md" />
+                </div>
+            </div>
+
+            <!-- Karate -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold">🥋 Karate Kid</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-4">
+                    <img src="images/karatekid.jpg" class="w-full h-56 object-cover rounded-xl shadow-md" />
+                </div>
+            </div>
+
+            <!-- Hover & Skate -->
+            <div class="mb-8">
+                <h3 class="text-xl font-semibold">🛹 Hoverboard & Skateboard</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-5 mt-4">
+                    <img src="images/hover.jpeg" class="w-full h-56 object-cover rounded-xl shadow-md" />
+                    <img src="images/Skate.jpeg" class="w-full h-56 object-cover rounded-xl shadow-md" />
+                </div>
+            </div>
+
+        </section>
+
+        <!-- FAVORITES -->
+        <section class="backdrop-blur-xl bg-white/70 p-10 rounded-2xl shadow-lg">
+            <h2 class="text-3xl font-bold text-deep mb-4">Favorite Things</h2>
+            <ul class="space-y-3 text-lg text-gray-700">
+                <li>⭐ Exploring nature</li>
+                <li>⭐ Making YouTube videos</li>
+                <li>⭐ Playing Roblox & Nintendo</li>
+                <li>⭐ Biking, swimming, hoverboarding</li>
+            </ul>
+        </section>
+
+        <!-- MESSAGE -->
+        <section class="backdrop-blur-xl bg-white/70 p-10 rounded-2xl shadow-lg text-center">
+            <h2 class="text-3xl font-bold text-deep mb-4">A Message from Shorya</h2>
+            <p class="italic text-xl text-gray-700">“Always stay brave, curious, and ready for new adventures!”</p>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 text-gray-700 text-sm">
+        Made with ❤️ for Shorya
+    </footer>
+
+    <!-- Chatbot toggle button -->
+    <button id="chat-toggle" aria-expanded="false" aria-controls="chatbot-widget" aria-label="Open chat">💬</button>
+
+    <!-- Chatbot widget -->
+    <div id="chatbot-widget" role="dialog" aria-labelledby="chat-header" aria-hidden="true">
+        <div id="chat-header">Chat with us</div>
+        <div id="chat-body" role="log" aria-live="polite"></div>
+        <div id="chat-input-area">
+            <input id="chat-input" type="text" aria-label="Type your message" placeholder="Type a message..." />
+            <button id="send-btn" aria-label="Send message">Send</button>
+        </div>
+    </div>
+
+    <script defer src="guided-chatbot.js"></script>
+
+</body>
+
+</html>
